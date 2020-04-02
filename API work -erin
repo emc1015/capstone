@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1> Fetch API </h1>
+        <button id ="fetchDataBtn"> Fetch Data </button>
+    </div>
+    
+    <hr>
+    <div id ="response"></div>
 
+    <script>
+        document.getElementById('fetchDataBtn').addEventListener('click', fetchData)
+
+         function fetchData() {
+        fetch('http://api.openweathermap.org/data/2.5/weather?zip=07110,us&APPID=ffd8afa9a03c59a8124a9e28b21048c9')
+        
+//change zip code for Philly: 19146
+// Kearny: 07032
+//Long Island Oyster Bar: 11771
+// Camden: 08002
+   
+            .then(response => response.json())
+            .then(json => console.log(json))
+        }
+    </script>
+
+</body>
+</html>
