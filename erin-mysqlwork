@@ -1,1 +1,15 @@
+// fetchindex was the file i named my api work
+
+$connect = mysqli_connect($servername, $username, $password, $db);
+
+$filename = "fetchindex.asp";
+$data = file_got_contents($filename);
+$array = json_decode($data, true);
+
+foreach($array as $row)
+{
+  $sql = "INSERT INTO weather(coord, weather, main, wind, rain, clouds, sys) VALUES (' " ", " ", " ", " ", " ", " ", " " ')"
+  
+  }
+  
 
