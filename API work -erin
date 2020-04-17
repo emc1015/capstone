@@ -18,7 +18,8 @@
         document.getElementById('fetchDataBtn').addEventListener('click', fetchData)
 
          function fetchData() {
-        fetch('http://api.openweathermap.org/data/2.5/weather?zip=07110,us&APPID=ffd8afa9a03c59a8124a9e28b21048c9')
+                fetch('http://api.openweathermap.org/data/2.5/group?id=5125125,5205788,5097707,4501019&units=imperial&APPID=ffd8afa9a03c59a8124a9e28b21048c9')                   
+
         
 //change zip code for Philly: 19146
 // Kearny: 07032
