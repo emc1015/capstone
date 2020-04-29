@@ -13,6 +13,16 @@
         background-color: #a7cce8;
 }
 
+
+.rightText{
+
+        padding:0 1vw;
+        text-align:center;
+        font-size:18px;
+        color:#205587;
+}
+
+
 h1{
         text-align: center;
         font-size: xx-large;
